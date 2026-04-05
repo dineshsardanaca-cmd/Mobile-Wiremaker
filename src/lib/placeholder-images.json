@@ -1,0 +1,934 @@
+{
+  "placeholderImages": [
+    {
+      "id": "restaurant-logo",
+      "description": "The logo for the restaurant.",
+      "imageUrl": "https://images.unsplash.com/photo-1628557010295-dd9198c31b84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXN0YXVyYW50JTIwbG9nb3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "restaurant logo"
+    },
+    {
+      "id": "restaurant-hero",
+      "description": "A hero image showing the restaurant's ambiance or a signature dish preparation.",
+      "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXN0YXVyYW50JTIwa2l0Y2hlbnxlbnwwfHx8fDE3Njg5NTg2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "restaurant kitchen"
+    },
+    {
+      "id": "marketplace-logo",
+      "description": "The logo for the marketplace.",
+      "imageUrl": "https://images.unsplash.com/photo-1627513182299-4bc6693d2cae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXJrZXRwbGFjZSUyMGxvZ298ZW58MHx8fHwxNzY5MzA2MzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marketplace logo"
+    },
+    {
+      "id": "marketplace-hero",
+      "description": "A hero image for the marketplace.",
+      "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaG9wcGluZyUyMG9ubGluZXxlbnwwfHx8fDE3Njk1NTI5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online shopping"
+    },
+    {
+      "id": "travel-logo",
+      "description": "The logo for the travel app.",
+      "imageUrl": "https://images.unsplash.com/photo-1577101737477-7443f8bf4848?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "plane ticket"
+    },
+    {
+      "id": "travel-hero-nyc",
+      "description": "A hero image for the travel app, showing New York City.",
+      "imageUrl": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "new york city"
+    },
+    {
+      "id": "qr-code-placeholder",
+      "description": "A placeholder image for a QR code.",
+      "imageUrl": "https://images.unsplash.com/photo-1603565816030-5b3e15531083?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "qr code"
+    },
+    {
+      "id": "coupon-italian-restaurant",
+      "imageUrl": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "italian restaurant"
+    },
+    {
+      "id": "coupon-burger-joint",
+      "imageUrl": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "burger and fries"
+    },
+    {
+      "id": "coupon-broadway",
+      "imageUrl": "https://images.unsplash.com/photo-1549887552-cb1082d55b32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "broadway theatre"
+    },
+    {
+      "id": "coupon-empire-state",
+      "imageUrl": "https://images.unsplash.com/photo-1550749873-195c52c6a0ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "empire state building"
+    },
+    {
+      "id": "coupon-nyc-cruise",
+      "imageUrl": "https://images.unsplash.com/photo-1600866169541-b0f3448c26c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "statue of liberty"
+    },
+    {
+      "id": "coupon-shopping-nyc",
+      "imageUrl": "https://images.unsplash.com/photo-1555529771-835f59fc5efe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "shopping bags"
+    },
+    {
+      "id": "laptop-1",
+      "imageUrl": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsYXB0b3AlMjBvbiUyMGRlc2t8ZW58MHx8fHwxNzY5NTUzMTM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop on desk"
+    },
+    {
+      "id": "phone-1",
+      "imageUrl": "https://images.unsplash.com/photo-1587426989387-3535853a0670?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBzbWFydHBob25lfGVufDB8fHx8MTc2OTU1MzEzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern smartphone"
+    },
+    {
+      "id": "speaker-1",
+      "imageUrl": "https://images.unsplash.com/photo-1606771891147-993ac880f557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxibHVldG9vdGglMjBzcGVha2VyfGVufDB8fHx8MTc2OTU1MzEzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bluetooth speaker"
+    },
+    {
+      "id": "headphones-1",
+      "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf40B2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxub2lzZSUyMGNhbmNlbGxpbmclMjBoZWFkcGhvbmVzfGVufDB8fHx8MTc2OTU1MzEzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "noise cancelling headphones"
+    },
+    {
+      "id": "book-1",
+      "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib29rc3xlbnwwfHx8fDE3Njk1NTMxODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "books"
+    },
+    {
+      "id": "book-2",
+      "imageUrl": "https://images.unsplash.com/photo-1543002588-b9b6b622e8af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib29rc3xlbnwwfHx8fDE3Njk1NTMxODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stack books"
+    },
+    {
+      "id": "blender-1",
+      "imageUrl": "https://images.unsplash.com/photo-1587143602497-17e57375d045?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibGVuZGVyfGVufDB8fHx8MTc2OTU1MzE4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blender"
+    },
+    {
+      "id": "espresso-machine-1",
+      "imageUrl": "https://images.unsplash.com/photo-1620858141446-f9a8a728b7e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlc3ByZXNzbyUyMG1hY2hpbmV8ZW58MHx8fHwxNzY5NTUzMTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "espresso machine"
+    },
+    {
+      "id": "tshirt-1",
+      "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2RlbCUyMHNoaXJ0fGVufDB8fHx8MTc2OTU1MzE4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "model shirt"
+    },
+    {
+      "id": "joggers-1",
+      "imageUrl": "https://images.unsplash.com/photo-1624312693829-b6209b531945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqZWFuJTIwam9nZ2Vyc3xlbnwwfHx8fDE3Njk1NTMxODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jean joggers"
+    },
+    {
+      "id": "pasta-carbonara",
+      "description": "A classic Spaghetti Carbonara with crispy pancetta and a creamy egg yolk sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXN0YSUyMGNhcmJvbmFyYXxlbnwwfHx8fDE3Njg2ODMxOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pasta carbonara"
+    },
+    {
+      "id": "bruschetta",
+      "description": "Toasted bread with fresh tomatoes, garlic, basil, and a drizzle of balsamic glaze.",
+      "imageUrl": "https://images.unsplash.com/photo-1558679582-4d81ce75993a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicnVzY2hldHRhJTIwYXBwZXRpemVyfGVufDB8fHx8MTc2ODcxNzgyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bruschetta appetizer"
+    },
+    {
+      "id": "ribeye-steak",
+      "description": "A 12oz ribeye steak cooked to perfection, served with asparagus and roasted potatoes.",
+      "imageUrl": "https://images.unsplash.com/photo-1690983321402-35ff91692b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyaWJleWUlMjBzdGVha3xlbnwwfHx8fDE3Njg3MTUzOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ribeye steak"
+    },
+    {
+      "id": "salmon-dish",
+      "description": "Pan-seared salmon fillet on a bed of creamy lemon-dill risotto.",
+      "imageUrl": "https://images.unsplash.com/photo-1645120091968-5f24af8eaff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYWxtb24lMjByaXNvdHRvfGVufDB8fHx8MTc2ODc3ODg5NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "salmon dish"
+    },
+    {
+      "id": "chocolate-lava-cake",
+      "description": "Warm chocolate cake with a molten center, served with vanilla bean ice cream.",
+      "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2ODY4MzIzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate cake"
+    },
+    {
+      "id": "cheesecake",
+      "description": "New York style cheesecake with a graham cracker crust and a strawberry coulis.",
+      "imageUrl": "https://images.unsplash.com/photo-1710362778452-07fabf048bb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaGVlc2VjYWtlJTIwc2xpY2V8ZW58MHx8fHwxNzY4NzEyMzg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheesecake slice"
+    },
+    {
+      "id": "caesar-salad-chicken",
+      "description": "Crisp romaine lettuce, parmesan cheese, croutons, and a classic Caesar dressing topped with grilled chicken.",
+      "imageUrl": "https://images.unsplash.com/photo-1746211108786-ca20c8f80ecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYWVzYXIlMjBzYWxhZHxlbnwwfHx8fDE3Njg3MTUzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "caesar salad"
+    },
+    {
+      "id": "vegan-burger",
+      "description": "A hearty plant-based patty on a brioche bun with all the fixings.",
+      "imageUrl": "https://images.unsplash.com/photo-1592415499556-74fcb9f18667?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2ZWdhbiUyMGJ1cmdlcnxlbnwwfHx8fDE3Njg3Nzg4OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegan burger"
+    },
+    {
+      "id": "spinach-dip",
+      "imageUrl": "https://images.unsplash.com/photo-1760368104881-661055ba056f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzcGluYWNoJTIwZGlwfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spinach dip"
+    },
+    {
+      "id": "calamari",
+      "imageUrl": "https://images.unsplash.com/photo-1595777358789-36e99912ccb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmllZCUyMGNhbGFtYXJpfGVufDB8fHx8MTc2OTI1NDQ2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fried calamari"
+    },
+    {
+      "id": "caprese-skewers",
+      "imageUrl": "https://images.unsplash.com/photo-1767114915957-2d2e61d59e7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXByZXNlJTIwc2tld2Vyc3xlbnwwfHx8fDE3NjkxOTMzODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "caprese skewers"
+    },
+    {
+      "id": "garlic-knots",
+      "imageUrl": "https://images.unsplash.com/photo-1641905777022-a2f31c030af1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnYXJsaWMlMjBrbm90c3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garlic knots"
+    },
+    {
+      "id": "stuffed-mushrooms",
+      "imageUrl": "https://images.unsplash.com/photo-1674959369832-31ee2c9be55e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVmZmVkJTIwbXVzaHJvb21zfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stuffed mushrooms"
+    },
+    {
+      "id": "shrimp-cocktail",
+      "imageUrl": "https://images.unsplash.com/photo-1613585536364-4d9640e94b37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzaHJpbXAlMjBjb2NrdGFpbHxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shrimp cocktail"
+    },
+    {
+      "id": "spring-rolls",
+      "imageUrl": "https://images.unsplash.com/photo-1560162071-da4c4a91077a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzcHJpbmclMjByb2xsc3xlbnwwfHx8fDE3NjkyMTA0MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spring rolls"
+    },
+    {
+      "id": "cheese-board",
+      "imageUrl": "https://images.unsplash.com/photo-1558221693-89a565d7ecd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGVlc2UlMjBib2FyZHxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheese board"
+    },
+    {
+      "id": "meatballs",
+      "imageUrl": "https://images.unsplash.com/photo-1615385361723-9f4c2daf42f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWF0YmFsbHN8ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "meatballs"
+    },
+    {
+      "id": "onion-rings",
+      "imageUrl": "https://images.unsplash.com/photo-1645066803695-f0dbe2c33e42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvbmlvbiUyMHJpbmdzfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "onion rings"
+    },
+    {
+      "id": "potato-skins",
+      "imageUrl": "https://images.unsplash.com/photo-1694101493160-10f1257fe9fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb3RhdG8lMjBza2luc3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "potato skins"
+    },
+    {
+      "id": "hummus-platter",
+      "imageUrl": "https://images.unsplash.com/photo-1768812910769-d037b90aee77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxodW1tdXMlMjBwbGF0dGVyfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hummus platter"
+    },
+    {
+      "id": "chicken-wings",
+      "imageUrl": "https://images.unsplash.com/photo-1600555379765-f82335a7b1b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGlja2VuJTIwd2luZ3N8ZW58MHx8fHwxNzY5MjM4NTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken wings"
+    },
+    {
+      "id": "guacamole",
+      "imageUrl": "https://images.unsplash.com/photo-1761405378461-1bac87589693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxndWFjYW1vbGUlMjBjaGlwc3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "guacamole chips"
+    },
+    {
+      "id": "mozzarella-sticks",
+      "imageUrl": "https://images.unsplash.com/photo-1762631884776-e1a2e5cd6d8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb3p6YXJlbGxhJTIwc3RpY2tzfGVufDB8fHx8MTc2OTI0NzQ1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mozzarella sticks"
+    },
+    {
+      "id": "tuna-tartare",
+      "imageUrl": "https://images.unsplash.com/photo-1761314015346-ba8a0d11d158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0dW5hJTIwdGFydGFyZXxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tuna tartare"
+    },
+    {
+      "id": "edamame",
+      "imageUrl": "https://images.unsplash.com/photo-1639672197027-75f2ae968e86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdGVhbWVkJTIwZWRhbWFtZXxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "steamed edamame"
+    },
+    {
+      "id": "crab-cakes",
+      "imageUrl": "https://images.unsplash.com/photo-1724861836718-d8443baa0f82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjcmFiJTIwY2FrZXN8ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "crab cakes"
+    },
+    {
+      "id": "quesadilla",
+      "imageUrl": "https://images.unsplash.com/photo-1719957770167-bb66133ba808?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxxdWVzYWRpbGxhfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quesadilla"
+    },
+    {
+      "id": "chicken-parm",
+      "imageUrl": "https://images.unsplash.com/photo-1762631383362-bad467f94a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlja2VuJTIwcGFybWVzYW58ZW58MHx8fHwxNzY5MjIyMzYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken parmesan"
+    },
+    {
+      "id": "filet-mignon",
+      "imageUrl": "https://images.unsplash.com/photo-1496113811466-78d040e80004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaWxldCUyMG1pZ25vbnxlbnwwfHx8fDE3NjkyMjIzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "filet mignon"
+    },
+    {
+      "id": "lobster-ravioli",
+      "imageUrl": "https://images.unsplash.com/photo-1523275033438-8c0a9239935b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bG9ic3RlciUyMHJhdmlvbGl8ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lobster ravioli"
+    },
+    {
+      "id": "fish-chips",
+      "imageUrl": "https://images.unsplash.com/photo-1576777647209-e8733d7b851d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaXNoJTIwYW5kJTIwY2hpcHN8ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fish and chips"
+    },
+    {
+      "id": "mushroom-risotto",
+      "imageUrl": "https://images.unsplash.com/photo-1723476654474-77baaeb27012?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtdXNocm9vbSUyMHJpc290dG98ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mushroom risotto"
+    },
+    {
+      "id": "bbq-ribs",
+      "imageUrl": "https://images.unsplash.com/photo-1606157715507-e106be6ab0b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYnElMjByaWJzfGVufDB8fHx8MTc2OTI3MzA3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bbq ribs"
+    },
+    {
+      "id": "shrimp-scampi",
+      "imageUrl": "https://images.unsplash.com/photo-1722938687754-d77c159da3c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaHJpbXAlMjBzY2FtcGl8ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shrimp scampi"
+    },
+    {
+      "id": "veg-curry",
+      "imageUrl": "https://images.unsplash.com/photo-1596797038530-2c107229654b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBjdXJyeXxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegetable curry"
+    },
+    {
+      "id": "steak-frites",
+      "imageUrl": "https://images.unsplash.com/photo-1719329466280-30d8a22e7cb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdGVhayUyMGZyaXRlc3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "steak frites"
+    },
+    {
+      "id": "penne-vodka",
+      "imageUrl": "https://images.unsplash.com/photo-1621495529739-d4008073091d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW5uZSUyMGFsbGElMjB2b2RrYXxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "penne alla vodka"
+    },
+    {
+      "id": "tacos",
+      "imageUrl": "https://images.unsplash.com/photo-1624300629298-e9de39c13be5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0YWNvc3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tacos"
+    },
+    {
+      "id": "lamb-chops",
+      "imageUrl": "https://images.unsplash.com/photo-1692106914406-093b0df73a10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYW1iJTIwY2hvcHN8ZW58MHx8fHwxNzY5MjU5MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lamb chops"
+    },
+    {
+      "id": "pad-thai",
+      "imageUrl": "https://images.unsplash.com/photo-1707546944460-dda9069b9c1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYWQlMjB0aGFpfGVufDB8fHx8MTc2OTIxMDQxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pad thai"
+    },
+    {
+      "id": "shepherds-pie",
+      "imageUrl": "https://images.unsplash.com/photo-1767465837990-92812223272b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzaGVwaGVyZHMlMjBwaWV8ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shepherds pie"
+    },
+    {
+      "id": "margherita-pizza",
+      "imageUrl": "https://images.unsplash.com/photo-1564936281291-294551497d81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY5MjU0NDYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "margherita pizza"
+    },
+    {
+      "id": "lasagna",
+      "imageUrl": "https://images.unsplash.com/photo-1629115916087-7e8c114a24ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYXNhZ25hfGVufDB8fHx8MTc2OTI2MTM0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lasagna"
+    },
+    {
+      "id": "duck-confit",
+      "imageUrl": "https://images.unsplash.com/photo-1628655956134-96a1c443f2b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkdWNrJTIwY29uZml0fGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "duck confit"
+    },
+    {
+      "id": "gnocchi",
+      "imageUrl": "https://images.unsplash.com/photo-1630444098747-2afd213cb945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z25vY2NoaXxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gnocchi"
+    },
+    {
+      "id": "tikka-masala",
+      "imageUrl": "https://images.unsplash.com/photo-1725013936271-f2aca0da266f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0aWtrYSUyMG1hc2FsYXxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tikka masala"
+    },
+    {
+      "id": "scallops",
+      "imageUrl": "https://images.unsplash.com/photo-1763052088730-1b4c6bd3f590?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZWFyZWQlMjBzY2FsbG9wc3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "seared scallops"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "imageUrl": "https://images.unsplash.com/photo-1761168941826-7efda859bdae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmZXR0dWNjaW5lJTIwYWxmcmVkb3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fettuccine alfredo"
+    },
+    {
+      "id": "pork-chop",
+      "imageUrl": "https://images.unsplash.com/photo-1659415401946-bbee8c483e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3JrJTIwY2hvcHxlbnwwfHx8fDE3NjkyNTQwMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pork chop"
+    },
+    {
+      "id": "sushi-platter",
+      "imageUrl": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXNoaSUyMHBsYXR0ZXJ8ZW58MHx8fHwxNzY5MjY4MDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sushi platter"
+    },
+    {
+      "id": "eggplant-parm",
+      "imageUrl": "https://images.unsplash.com/photo-1605197378540-10ebaf6999e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlZ2dwbGFudCUyMHBhcm1lc2FufGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eggplant parmesan"
+    },
+    {
+      "id": "clam-chowder",
+      "imageUrl": "https://images.unsplash.com/photo-1560684352-8497838a2229?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbGFtJTIwY2hvd2RlcnxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clam chowder"
+    },
+    {
+      "id": "tiramisu",
+      "imageUrl": "https://images.unsplash.com/photo-1707269388230-60ceceac3e6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0aXJhbWlzdXxlbnwwfHx8fDE3NjkyNzIwMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tiramisu"
+    },
+    {
+      "id": "apple-crumble",
+      "imageUrl": "https://images.unsplash.com/photo-1737217900803-b0660f451353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcHBsZSUyMGNydW1ibGV8ZW58MHx8fHwxNzY5MjU1MTExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "apple crumble"
+    },
+    {
+      "id": "creme-brulee",
+      "imageUrl": "https://images.unsplash.com/photo-1615234435691-3b7bae98085e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjcmVtZSUyMGJydWxlZXxlbnwwfHx8fDE3NjkyMTczMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "creme brulee"
+    },
+    {
+      "id": "sundae",
+      "imageUrl": "https://images.unsplash.com/photo-1447195047884-0f014b0d9288?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpY2UlMjBjcmVhbSUyMHN1bmRhZXxlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ice cream sundae"
+    },
+    {
+      "id": "key-lime-pie",
+      "imageUrl": "https://images.unsplash.com/photo-1584531482062-37761d8f3c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxrZXklMjBsaW1lJTIwcGllfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "key lime pie"
+    },
+    {
+      "id": "panna-cotta",
+      "imageUrl": "https://images.unsplash.com/photo-1603532523708-fc0df21fa2e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwYW5uYSUyMGNvdHRhfGVufDB8fHx8MTc2OTE4NTkxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "panna cotta"
+    },
+    {
+      "id": "brownie-a-la-mode",
+      "imageUrl": "https://images.unsplash.com/photo-1639744092433-0e98ca50d5fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxicm93bmllJTIwaWNlJTIwY3JlYW18ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brownie ice cream"
+    },
+    {
+      "id": "sorbet",
+      "imageUrl": "https://images.unsplash.com/photo-1485217939211-45a6241d40a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmcnVpdCUyMHNvcmJldHxlbnwwfHx8fDE3NjkzMDA5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fruit sorbet"
+    },
+    {
+      "id": "cannoli",
+      "imageUrl": "https://images.unsplash.com/photo-1679907345387-3ce6b4d52737?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYW5ub2xpfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cannoli"
+    },
+    {
+      "id": "lemon-tart",
+      "imageUrl": "https://images.unsplash.com/photo-1541781550486-81b7a2328578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsZW1vbiUyMHRhcnR8ZW58MHx8fHwxNzY5MjEwNjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lemon tart"
+    },
+    {
+      "id": "bread-pudding",
+      "imageUrl": "https://images.unsplash.com/photo-1626256139204-8b4c568dd71b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmVhZCUyMHB1ZGRpbmd8ZW58MHx8fHwxNzY5MjU1MTExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bread pudding"
+    },
+    {
+      "id": "chocolate-mousse",
+      "imageUrl": "https://images.unsplash.com/photo-1504388192519-fb4be897c4d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaG9jb2xhdGUlMjBtb3Vzc2V8ZW58MHx8fHwxNzY5MzAwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate mousse"
+    },
+    {
+      "id": "affogato",
+      "imageUrl": "https://images.unsplash.com/photo-1660292265700-8f0bfc0f93e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZmZvZ2F0b3xlbnwwfHx8fDE3NjkzMDA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "affogato"
+    },
+    {
+      "id": "carrot-cake",
+      "imageUrl": "https://images.unsplash.com/photo-1676300186098-9b5ae9916e3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJyb3QlMjBjYWtlfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "carrot cake"
+    },
+    {
+      "id": "red-velvet-cake",
+      "imageUrl": "https://images.unsplash.com/photo-1687877858381-e98c32796861?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZWQlMjB2ZWx2ZXQlMjBjYWtlfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "red velvet cake"
+    },
+    {
+      "id": "profiteroles",
+      "imageUrl": "https://images.unsplash.com/photo-1761637588199-ecd32fea8325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9maXRlcm9sZXN8ZW58MHx8fHwxNzY5MzAwOTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "profiteroles"
+    },
+    {
+      "id": "bananas-foster",
+      "imageUrl": "https://images.unsplash.com/photo-1645596418756-b39ddab57a84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYW5hbmFzJTIwZm9zdGVyfGVufDB8fHx8MTc2OTMwMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bananas foster"
+    },
+    {
+      "id": "fruit-tart",
+      "imageUrl": "https://images.unsplash.com/photo-1717677752061-6efe3d8ac919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcnVpdCUyMHRhcnR8ZW58MHx8fHwxNzY5Mjk2ODU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fruit tart"
+    },
+    {
+      "id": "webcam-1",
+      "imageUrl": "https://images.unsplash.com/photo-1617315531238-0c33a8517a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "webcam monitor"
+    },
+    {
+      "id": "keyboard-1",
+      "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "mechanical keyboard"
+    },
+    {
+      "id": "mouse-1",
+      "imageUrl": "https://images.unsplash.com/photo-1615663249852-32f41a87c123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "gaming mouse"
+    },
+    {
+      "id": "monitor-1",
+      "imageUrl": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "ultrawide monitor"
+    },
+    {
+      "id": "tablet-1",
+      "imageUrl": "https://images.unsplash.com/photo-1561154464-82e9adf32764?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "tablet desk"
+    },
+    {
+      "id": "smartwatch-1",
+      "imageUrl": "https://images.unsplash.com/photo-1544117519-31a4b719223d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "smartwatch wrist"
+    },
+    {
+      "id": "drone-1",
+      "imageUrl": "https://images.unsplash.com/photo-1507582020474-9a334a761947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "drone flying"
+    },
+    {
+      "id": "gaming-console-1",
+      "imageUrl": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "gaming console"
+    },
+    {
+      "id": "vr-headset-1",
+      "imageUrl": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "vr headset"
+    },
+    {
+      "id": "projector-1",
+      "imageUrl": "https://images.unsplash.com/photo-1535016120720-40c646be5580?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "home projector"
+    },
+    {
+      "id": "e-reader-1",
+      "imageUrl": "https://images.unsplash.com/photo-1594488552690-05b897850020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "e-reader book"
+    },
+    {
+      "id": "camera-1",
+      "imageUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "dslr camera"
+    },
+    {
+      "id": "power-bank-1",
+      "imageUrl": "https://images.unsplash.com/photo-1588621434554-6a7b16d1e44f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "power bank"
+    },
+    {
+      "id": "router-1",
+      "imageUrl": "https://images.unsplash.com/photo-1587579696397-60a6136f3ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "wifi router"
+    },
+    {
+      "id": "printer-1",
+      "imageUrl": "https://images.unsplash.com/photo-1612815154858-60aa4c599c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "office printer"
+    },
+    {
+      "id": "external-hard-drive-1",
+      "imageUrl": "https://images.unsplash.com/photo-1605377259419-556534578b87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "external ssd"
+    },
+    {
+      "id": "usb-hub-1",
+      "imageUrl": "https://images.unsplash.com/photo-1603575399589-9e1088621e25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "usb c hub"
+    },
+    {
+      "id": "graphics-card-1",
+      "imageUrl": "https://images.unsplash.com/photo-1591438252948-9cf5756a4b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "graphics card"
+    },
+    {
+      "id": "cpu-1",
+      "imageUrl": "https://images.unsplash.com/photo-1591799264318-7e6e74e3c8e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "computer cpu"
+    },
+    {
+      "id": "motherboard-1",
+      "imageUrl": "https://images.unsplash.com/photo-1593164843333-8b4d8a57008a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "pc motherboard"
+    },
+    {
+      "id": "ram-1",
+      "imageUrl": "https://images.unsplash.com/photo-1592424002035-22461625ad75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "computer ram"
+    },
+    {
+      "id": "jeans-1",
+      "imageUrl": "https://images.unsplash.com/photo-1602293589914-9FF05f8b2e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "denim jeans"
+    },
+    {
+      "id": "hoodie-1",
+      "imageUrl": "https://images.unsplash.com/photo-1556426423-c463b2f5678b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "grey hoodie"
+    },
+    {
+      "id": "jacket-1",
+      "imageUrl": "https://images.unsplash.com/photo-1591047139829-d916bb69a4c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "leather jacket"
+    },
+    {
+      "id": "sneakers-1",
+      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "running shoes"
+    },
+    {
+      "id": "hat-1",
+      "imageUrl": "https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "beanie hat"
+    },
+    {
+      "id": "sunglasses-1",
+      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "sunglasses"
+    },
+    {
+      "id": "watch-1",
+      "imageUrl": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "wrist watch"
+    },
+    {
+      "id": "backpack-1",
+      "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb68c6a62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "modern backpack"
+    },
+    {
+      "id": "dress-1",
+      "imageUrl": "https://images.unsplash.com/photo-1595777457582-0738d21291a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "summer dress"
+    },
+    {
+      "id": "boots-1",
+      "imageUrl": "https://images.unsplash.com/photo-1599351378393-01fb299f0e15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "leather boots"
+    },
+    {
+      "id": "scarf-1",
+      "imageUrl": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "wool scarf"
+    },
+    {
+      "id": "gloves-1",
+      "imageUrl": "https://images.unsplash.com/photo-1542641763-a4901b697523?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "winter gloves"
+    },
+    {
+      "id": "socks-1",
+      "imageUrl": "https://images.unsplash.com/photo-1613946268242-2b62370046b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "patterned socks"
+    },
+    {
+      "id": "belt-1",
+      "imageUrl": "https://images.unsplash.com/photo-1543364195-077a16c30ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "leather belt"
+    },
+    {
+      "id": "shorts-1",
+      "imageUrl": "https://images.unsplash.com/photo-1591130901921-3f0655bb3455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "denim shorts"
+    },
+    {
+      "id": "polo-shirt-1",
+      "imageUrl": "https://images.unsplash.com/photo-1627225793913-a1e15119a279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "polo shirt"
+    },
+    {
+      "id": "sweater-1",
+      "imageUrl": "https://images.unsplash.com/photo-1616763695593-1a2f6445b4c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "knit sweater"
+    },
+    {
+      "id": "blouse-1",
+      "imageUrl": "https://images.unsplash.com/photo-1617922002334-9e6a48a901f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "silk blouse"
+    },
+    {
+      "id": "skirt-1",
+      "imageUrl": "https://images.unsplash.com/photo-1589465357805-6c611581023a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "pleated skirt"
+    },
+    {
+      "id": "leggings-1",
+      "imageUrl": "https://images.unsplash.com/photo-1603217041433-8a0e8c53139b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "yoga leggings"
+    },
+    {
+      "id": "sports-bra-1",
+      "imageUrl": "https://images.unsplash.com/photo-1579482322439-7a7d43f6515a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "sports bra"
+    },
+    {
+      "id": "swim-trunks-1",
+      "imageUrl": "https://images.unsplash.com/photo-1619510368143-a80696f8c66a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "swim trunks"
+    },
+    {
+      "id": "sandals-1",
+      "imageUrl": "https://images.unsplash.com/photo-1603487742131-41132995e308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "leather sandals"
+    },
+    {
+      "id": "coffee-maker-1",
+      "imageUrl": "https://images.unsplash.com/photo-1622269496096-7649c5836b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "drip coffee maker"
+    },
+    {
+      "id": "toaster-1",
+      "imageUrl": "https://images.unsplash.com/photo-1594212699903-ec8a6e5029b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "kitchen toaster"
+    },
+    {
+      "id": "air-fryer-1",
+      "imageUrl": "https://images.unsplash.com/photo-1658428230999-523e803e0f9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "air fryer"
+    },
+    {
+      "id": "knife-set-1",
+      "imageUrl": "https://images.unsplash.com/photo-1620216464299-6a053176839a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "kitchen knife set"
+    },
+    {
+      "id": "pots-pans-set-1",
+      "imageUrl": "https://images.unsplash.com/photo-1591116212050-93478dd613d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "pots and pans"
+    },
+    {
+      "id": "vacuum-cleaner-1",
+      "imageUrl": "https://images.unsplash.com/photo-1579548774849-d75e4e89f33b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "vacuum cleaner"
+    },
+    {
+      "id": "throw-pillow-1",
+      "imageUrl": "https://images.unsplash.com/photo-1618221379969-0b7a8d56353d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "sofa pillows"
+    },
+    {
+      "id": "indoor-plant-1",
+      "imageUrl": "https://images.unsplash.com/photo-1509223197845-d58f3cfa334c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "potted plant"
+    },
+    {
+      "id": "candle-1",
+      "imageUrl": "https://images.unsplash.com/photo-1601920199925-25e23b20460a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "scented candle"
+    },
+    {
+      "id": "cutting-board-1",
+      "imageUrl": "https://images.unsplash.com/photo-1633636625447-3a1717f735d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "wood cutting board"
+    },
+    {
+      "id": "mixing-bowls-1",
+      "imageUrl": "https://images.unsplash.com/photo-1604929280993-979914751433?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "mixing bowls"
+    },
+    {
+      "id": "utensil-set-1",
+      "imageUrl": "https://images.unsplash.com/photo-1620216465492-94931a67a840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "kitchen utensils"
+    },
+    {
+      "id": "baking-sheet-1",
+      "imageUrl": "https://images.unsplash.com/photo-1588701235954-a69410352055?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "baking sheet"
+    },
+    {
+      "id": "desk-lamp-1",
+      "imageUrl": "https://images.unsplash.com/photo-1542880942-0359f0f948f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "desk lamp"
+    },
+    {
+      "id": "blanket-1",
+      "imageUrl": "https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "cozy blanket"
+    },
+    {
+      "id": "wall-art-1",
+      "imageUrl": "https://images.unsplash.com/photo-1541943449839-20a28a386184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "abstract wall art"
+    },
+    {
+      "id": "picture-frame-1",
+      "imageUrl": "https://images.unsplash.com/photo-1542044896-0b1314a84976?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "picture frame"
+    },
+    {
+      "id": "storage-bins-1",
+      "imageUrl": "https://images.unsplash.com/photo-1604321115363-227050a41753?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "storage bins"
+    },
+    {
+      "id": "laundry-basket-1",
+      "imageUrl": "https://images.unsplash.com/photo-1585502120619-33842b6f1647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "laundry basket"
+    },
+    {
+      "id": "bath-towel-set-1",
+      "imageUrl": "https://images.unsplash.com/photo-1615634289168-932d5b62788c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "towel set"
+    },
+    {
+      "id": "soap-dispenser-1",
+      "imageUrl": "https://images.unsplash.com/photo-1609141836349-74e2d37c8a6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "soap dispenser"
+    },
+    {
+      "id": "robot-vacuum-1",
+      "imageUrl": "https://images.unsplash.com/photo-1644675409459-a65c95574542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "robot vacuum"
+    },
+    {
+      "id": "microwave-1",
+      "imageUrl": "https://images.unsplash.com/photo-1603565095304-03487f5492d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "microwave oven"
+    },
+    {
+      "id": "mystery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "old books"
+    },
+    {
+      "id": "scifi-2",
+      "imageUrl": "https://images.unsplash.com/photo-1550399105-c4db5fb85c18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "book stack"
+    },
+    {
+      "id": "biography-1",
+      "imageUrl": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "library books"
+    },
+    {
+      "id": "cookbook-2",
+      "imageUrl": "https://images.unsplash.com/photo-1540420773420-285f7f127e53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "open cookbook"
+    },
+    {
+      "id": "programming-book-1",
+      "imageUrl": "https://images.unsplash.com/photo-1526498460520-4c246339dccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "code on laptop"
+    },
+    {
+      "id": "fantasy-1",
+      "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "fantasy book"
+    },
+    {
+      "id": "self-help-1",
+      "imageUrl": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "self help"
+    },
+    {
+      "id": "science-book-1",
+      "imageUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "science book"
+    },
+    {
+      "id": "historical-fiction-1",
+      "imageUrl": "https://images.unsplash.com/photo-1475643438343-65d3885f83c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "historical fiction"
+    },
+    {
+      "id": "horror-novel-1",
+      "imageUrl": "https://images.unsplash.com/photo-1582453818055-6fe4669f6443?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "horror novel"
+    },
+    {
+      "id": "romance-novel-1",
+      "imageUrl": "https://images.unsplash.com/photo-1542988533-87f5735b5463?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "romance novel"
+    },
+    {
+      "id": "thriller-1",
+      "imageUrl": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "thriller book"
+    },
+    {
+      "id": "travel-guide-1",
+      "imageUrl": "https://images.unsplash.com/photo-1503221043305-f7498f808381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "travel guide"
+    },
+    {
+      "id": "classic-novel-1",
+      "imageUrl": "https://images.unsplash.com/photo-1570760444399-52b8b64e8a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "classic novel"
+    },
+    {
+      "id": "philosophy-book-1",
+      "imageUrl": "https://images.unsplash.com/photo-1481283533469-35496a78a631?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "philosophy book"
+    },
+    {
+      "id": "graphic-novel-1",
+      "imageUrl": "https://images.unsplash.com/photo-1608889476518-738c92f76148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "graphic novel"
+    },
+    {
+      "id": "kids-book-1",
+      "imageUrl": "https://images.unsplash.com/photo-1549448509-d7cd0a0a5413?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "kids book"
+    },
+    {
+      "id": "ya-novel-1",
+      "imageUrl": "https://images.unsplash.com/photo-1601633519803-09b63c7e7354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "young adult novel"
+    },
+    {
+      "id": "business-book-1",
+      "imageUrl": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "business book"
+    },
+    {
+      "id": "art-book-1",
+      "imageUrl": "https://images.unsplash.com/photo-1520468087994-b73385437819?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "art book"
+    },
+    {
+      "id": "fiction-1",
+      "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "fiction book"
+    },
+    {
+      "id": "history-1",
+      "imageUrl": "https://images.unsplash.com/photo-1569723223942-5381a17c24f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "history book"
+    },
+    {
+      "id": "poetry-1",
+      "imageUrl": "https://images.unsplash.com/photo-1518615466419-69d31c981d3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "poetry book"
+    }
+  ]
+}
