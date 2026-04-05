@@ -1,4 +1,4 @@
-# MenuMorph
+# Mobile Wiremaker (MenuMorph)
 
 MenuMorph is a dynamic, data-driven Next.js application designed to "morph" its entire interface and functionality based on the selected mode. It can seamlessly transition between a **Restaurant Menu**, a **Product Marketplace**, and a **Travel Coupon Wallet**.
 
