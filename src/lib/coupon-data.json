@@ -1,0 +1,101 @@
+
+{
+  "storeInfo": {
+    "name": "NYC TravelPass",
+    "logoImageId": "travel-logo",
+    "heroImageId": "travel-hero-nyc",
+    "homeTabLabel": "Deals"
+  },
+  "couponItems": [
+    {
+      "id": "coupon-din-1",
+      "name": "20% Off Your Entire Bill",
+      "price": 0,
+      "description": "Enjoy a delicious Italian meal in the heart of Greenwich Village with 20% off your total bill.",
+      "type": "coupon",
+      "category": "Dining",
+      "venue": "Trattoria Verde",
+      "terms": "Offer valid for up to 4 guests. Cannot be combined with other offers. Not valid on holidays. Gratuity not included.",
+      "attributes": [{"id": "fine-dining", "label": "Fine Dining", "icon": "FineDining"}, {"id": "reservations-req", "label": "Reservations Required", "icon": "ReservationsRequired"}],
+      "imageId": "coupon-italian-restaurant",
+      "qrCodeImageId": "qr-code-placeholder",
+      "averageRating": 4,
+      "reviews": [{"author": "Jessica", "rating": 5, "comment": "The pasta was incredible! This coupon made it a great deal."}, {"author": "Tom", "rating": 4, "comment": "Lovely atmosphere and great service."}],
+      "relatedItemIds": ["coupon-ent-1", "coupon-tour-1"]
+    },
+    {
+      "id": "coupon-din-2",
+      "name": "Free Appetizer with Entree Purchase",
+      "price": 0,
+      "description": "Get a free order of our famous 'Liberty Fries' with the purchase of any two entrees.",
+      "type": "coupon",
+      "category": "Dining",
+      "venue": "The Patriot Burger",
+      "terms": "Limit one free appetizer per table. Must purchase two full-priced entrees. Dine-in only.",
+      "attributes": [{"id": "family-friendly", "label": "Family-Friendly", "icon": "FamilyFriendly"}],
+      "imageId": "coupon-burger-joint",
+      "qrCodeImageId": "qr-code-placeholder",
+      "averageRating": 5,
+      "reviews": [{"author": "Mike", "rating": 5, "comment": "Best burgers in town, and the free fries were a bonus!"}],
+      "relatedItemIds": ["coupon-ent-2"]
+    },
+    {
+      "id": "coupon-ent-1",
+      "name": "Buy One, Get One Free Ticket",
+      "price": 0,
+      "description": "Experience the magic of Broadway! Buy one ticket for 'The Silicon Heart: The Musical' and get a second one free.",
+      "type": "coupon",
+      "category": "Entertainment",
+      "venue": "The Digital Theatre",
+      "terms": "Offer valid for mezzanine seats on Tuesday-Thursday performances only. Subject to availability.",
+      "attributes": [{"id": "reservations-req", "label": "Reservations Required", "icon": "ReservationsRequired"}],
+      "imageId": "coupon-broadway",
+      "qrCodeImageId": "qr-code-placeholder",
+      "relatedItemIds": ["coupon-din-1", "coupon-shop-1"]
+    },
+    {
+      "id": "coupon-ent-2",
+      "name": "$15 Off Admission",
+      "price": 0,
+      "description": "Get $15 off your all-day pass to the top of the iconic Empire State Building for breathtaking 360° views.",
+      "type": "coupon",
+      "category": "Entertainment",
+      "venue": "Empire State Building",
+      "terms": "Valid for standard adult admission only. Not valid for express pass or special events.",
+      "attributes": [{"id": "family-friendly", "label": "Family-Friendly", "icon": "FamilyFriendly"}],
+      "imageId": "coupon-empire-state",
+      "qrCodeImageId": "qr-code-placeholder",
+      "averageRating": 5,
+      "reviews": [{"author": "Sarah", "rating": 5, "comment": "The views are absolutely worth it. The coupon was easy to use."}],
+      "relatedItemIds": ["coupon-tour-1", "coupon-din-2"]
+    },
+    {
+      "id": "coupon-tour-1",
+      "name": "15% Off Harbor Lights Cruise",
+      "price": 0,
+      "description": "See the NYC skyline and Statue of Liberty sparkle at night on this relaxing 2-hour cruise.",
+      "type": "coupon",
+      "category": "Tours",
+      "venue": "Circle Line Sightseeing Cruises",
+      "terms": "Must book online using promo code provided. Valid for the 7:00 PM Harbor Lights cruise only.",
+      "attributes": [{"id": "reservations-req", "label": "Reservations Required", "icon": "ReservationsRequired"}],
+      "imageId": "coupon-nyc-cruise",
+      "qrCodeImageId": "qr-code-placeholder",
+      "relatedItemIds": ["coupon-ent-2", "coupon-din-1"]
+    },
+    {
+      "id": "coupon-shop-1",
+      "name": "Free Tote Bag with $100 Purchase",
+      "price": 0,
+      "description": "Get an exclusive 'I ❤️ NYC' designer tote bag when you spend $100 or more at this iconic 5th Avenue department store.",
+      "type": "coupon",
+      "category": "Shopping",
+      "venue": "Macy's Herald Square",
+      "terms": "Purchase must be made in a single transaction. Excludes cosmetics and furniture. While supplies last.",
+      "attributes": [],
+      "imageId": "coupon-shopping-nyc",
+      "qrCodeImageId": "qr-code-placeholder",
+      "relatedItemIds": ["coupon-ent-1"]
+    }
+  ]
+}
